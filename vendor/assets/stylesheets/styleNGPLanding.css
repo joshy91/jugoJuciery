@@ -56,19 +56,19 @@ h5 {
       height: 100%;
     }
     .carousel-item:nth-child(1) {
-      background-image: url("https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg");
+      background-image: url("https://s3.amazonaws.com/ngpwebsite/juices.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
     .carousel-item:nth-child(2) {
-      background-image: url("https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg");
+      background-image: url("https://s3.amazonaws.com/ngpwebsite/acaiBowl.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
     .carousel-item:nth-child(3) {
-      background-image: url("https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg");
+      background-image: url("https://s3.amazonaws.com/ngpwebsite/juice-girl.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
