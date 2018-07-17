@@ -1,17 +1,80 @@
 /* Your custom styles */
+/* Required for full background image */
 
-html, 
-body, 
-header, 
-#intro {
+html,
+  body,
+  .view {
     height: 100%;
+
+  }
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+
+  }
 }
 
-#intro {
-    background: url("transmissionPhoto.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.top-nav-collapse {
+  background-color: #78909c !important;
 }
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+
+ /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+    .carousel-item:nth-child(1) {
+      background-image: url("https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(2) {
+      background-image: url("https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(3) {
+      background-image: url("https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
         
+#navbar-brand {
+	font-weight: bold;
+	font-style: italic;
+}
