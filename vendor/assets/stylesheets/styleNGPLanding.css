@@ -19,7 +19,7 @@ html,
 }
 
 .top-nav-collapse {
-  background-color: #78909c !important;
+  background-color: #212121 !important;
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -28,7 +28,7 @@ html,
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
+    background: #212121 !important;
   }
 }
 
@@ -56,19 +56,19 @@ h5 {
       height: 100%;
     }
     .carousel-item:nth-child(1) {
-      background-image: url("https://s3.amazonaws.com/ngpwebsite/juices.png");
+      background-image: url("https://s3.amazonaws.com/ngpwebsite/juices.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
     .carousel-item:nth-child(2) {
-      background-image: url("https://s3.amazonaws.com/ngpwebsite/acaiBowl.png");
+      background-image: url("https://s3.amazonaws.com/ngpwebsite/acaibowl.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
     .carousel-item:nth-child(3) {
-      background-image: url("https://s3.amazonaws.com/ngpwebsite/juice-girl.jpg");
+      background-image: url("https://s3.amazonaws.com/ngpwebsite/juice_girl.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
