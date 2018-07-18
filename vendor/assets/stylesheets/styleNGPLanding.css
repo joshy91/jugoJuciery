@@ -56,19 +56,19 @@ h5 {
       height: 100%;
     }
     .carousel-item:nth-child(1) {
-      background-image: url("https://s3.amazonaws.com/ngpwebsite/juices.jpg");
+      background-image: url("https://s3.amazonaws.com/ngpwebsite/juices.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
     .carousel-item:nth-child(2) {
-      background-image: url("https://s3.amazonaws.com/ngpwebsite/acaibowl.jpg");
+      background-image: url("https://s3.amazonaws.com/ngpwebsite/acaiBowl.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
     .carousel-item:nth-child(3) {
-      background-image: url("https://s3.amazonaws.com/ngpwebsite/juice_girl.jpg");
+      background-image: url("https://s3.amazonaws.com/ngpwebsite/juice-girl.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
