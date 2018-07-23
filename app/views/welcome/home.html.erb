@@ -4,7 +4,7 @@
 <header>
   <!-- Full Page Intro -->
   <div class="view">
-    <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" autoplay loop>
+    <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playinline autoplay loop>
       <source src="https://s3.amazonaws.com/ngpwebsite/jugojuicerylandingVid.mp4" type="video/mp4">
     </video>
     <!-- Mask & flexbox options-->
@@ -31,4 +31,23 @@
   <!-- Full Page Intro -->
 </header>    
             
+<script type="text/javascript">
+var video = document.getElementById("video-intro");
+var playing = false;
 
+//The timeout time may need to be higher depending on the runtime of the mdl init...
+setTimeout(function() {
+     video.play();
+    }, 500); 
+
+// I got some issues with long videos (20s+),there i had to reset the 
+// current play time about 3 seconds ( (video.duration * 1000)-3000) ) before the end.
+video.addEventListener("play", function() {
+      if(!playing) {
+        setInterval(function() {
+          video.currentTime = 0;
+        }, (video.duration * 1000)-20);  
+        playing = true;
+      }
+    });
+</script>
