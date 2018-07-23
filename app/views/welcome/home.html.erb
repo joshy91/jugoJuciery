@@ -3,9 +3,17 @@
 <!-- Main navigation -->
   <!-- Full Page Intro -->
   <div class="view">
-    <iframe id="preview-frame" src="https://s3.amazonaws.com/ngpwebsite/jugojuicerylandingVid.mp4" name="preview-frame" allow="autoplay"frameborder="0" noresize="noresize" >
-</iframe>
-     <!-- Mask & flexbox options-->
+    <video class="video-intro" id="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playinline preload="true" autoplay="autoplay" loop="loop">
+      <source src="https://s3.amazonaws.com/ngpwebsite/jugojuicerylandingVid.mp4" type="video/mp4">
+            
+    </video>
+    <script>
+    $('.welcome.home').ready(function(){
+       sleep 800;
+        
+    });
+    </script>
+    <!-- Mask & flexbox options-->
     <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
       <!-- Content -->
       <div class="container px-md-3 px-sm-0">
@@ -13,9 +21,12 @@
         <div class="row wow fadeIn">
           <!--Grid column-->
           <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Don't Settle for Average Juice, upgrade to Jugo!</h3>
+            <h3 id="headline" class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Don't Settle for Average Juice, upgrade to Jugo!</h3>
+            <script>
+            setInterval(document.getElementById("video-intro").play(),800);
+            </script>
             <a href="#!" class="btn btn-rounded btn-outline-white">
-              <i class="fa fa-home"></i> Here Jugo
+              <i class="fa fa-cup"></i> Here Jugo
             </a>
           </div>
           <!--Grid column-->

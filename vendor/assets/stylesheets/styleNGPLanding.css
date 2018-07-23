@@ -8,7 +8,6 @@ header,
   height: 100%;
 }
 
-
 @media (max-width: 740px) {
   html,
   body,
@@ -32,10 +31,10 @@ h5 {
   width: 80px;
 }
 
-iframe {
-    display: inline-block;       /* iframes are inline by default */
-    background: #000;
-    border: none;         /* Reset default border */
-    height: 100%;        /* Viewport-relative units */
-    width: 100%;
+#my-vid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
