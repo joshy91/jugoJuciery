@@ -8,10 +8,17 @@
             
     </video>
     <script>
-    $('.welcome.home').ready(function(){
-       sleep 800;
-        
-    });
+        var vid = document.getElementById("video-intro");
+
+        function playVid() {
+        vid.play();
+        }
+
+        function pauseVid() {
+        vid.pause();
+        }
+        setInterval(playVid,1500);
+
     </script>
     <!-- Mask & flexbox options-->
     <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
@@ -21,12 +28,10 @@
         <div class="row wow fadeIn">
           <!--Grid column-->
           <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-            <h3 id="headline" class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Don't Settle for Average Juice, upgrade to Jugo!</h3>
-            <script>
-            setInterval(document.getElementById("video-intro").play(),800);
-            </script>
+            <h3 id="headline" class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Don't Settle for Average Juice, Upgrade to Jugo!</h3>
+            
             <a href="#!" class="btn btn-rounded btn-outline-white">
-              <i class="fa fa-cup"></i> Here Jugo
+              <i class="fa fa-home"></i> Here Jugo
             </a>
           </div>
           <!--Grid column-->
