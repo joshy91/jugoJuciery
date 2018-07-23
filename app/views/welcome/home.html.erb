@@ -3,12 +3,15 @@
 <!-- Main navigation -->
   <!-- Full Page Intro -->
   <div class="view">
-    <video class="video-intro" id="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playinline preload="true" autoplay="autoplay" loop="loop">
+    <video class="video-intro" id="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playinline preload="true" autoplay="autoplay" loop="loop" muted preload="metadata">
       <source src="https://s3.amazonaws.com/ngpwebsite/jugojuicerylandingVid.mp4" type="video/mp4">
             
     </video>
     <script>
         var vid = document.getElementById("video-intro");
+
+        function playVid2() {
+            document.onmouseover = vid.play();
 
         function playVid() {
         vid.play();
@@ -17,7 +20,7 @@
         function pauseVid() {
         vid.pause();
         }
-        setInterval(playVid,1500);
+        setInterval(playVid,300);
 
     </script>
     <!-- Mask & flexbox options-->
