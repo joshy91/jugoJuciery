@@ -3,18 +3,19 @@
 <!-- Main navigation -->
   <!-- Full Page Intro -->
   <div class="view">
-    <video class="video-intro" id="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playinline preload="true" autoplay="autoplay" loop="loop" muted preload="metadata">
-      <source src="https://s3.amazonaws.com/ngpwebsite/jugojuicerylandingVid.mp4" type="video/mp4">
+    <video class="video-intro" id="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playinline="" controls="true" preload="true" autoplay="autoplay" loop="loop" muted=""> <source src="https://s3.amazonaws.com/ngpwebsite/jugojuicerylandingVid.mp4" type="video/mp4"> </video>
             
     </video>
+    #Scripts solves chrome issues; working on safari
     <script>
         var vid = document.getElementById("video-intro");
 
-        function playVid2() {
-            document.onmouseover = vid.play();
-
         function playVid() {
         vid.play();
+        }
+
+        function playVid2() {
+            document.getElementById("headline").onmouseover = vid.pause();
         }
 
         function pauseVid() {
