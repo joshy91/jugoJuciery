@@ -3,10 +3,10 @@
 <!-- Main navigation -->
   <!-- Full Page Intro -->
   <div class="view">
-    <video class="video-intro" id="video-intro" poster="https://s3.amazonaws.com/ngpwebsite/jugoLanding9.gif" playinline="" controls="true" preload="true" autoplay="autoplay" loop="loop"> <source src="https://s3.amazonaws.com/ngpwebsite/jugojuicerylandingVid.mp4" type="video/mp4"> </video>
+    <video class="video-intro" id="video-intro" poster="https://s3.amazonaws.com/ngpwebsite/jugoLanding9.gif" playinline="" preload="true" autoplay="autoplay" loop="loop"> <source src="https://s3.amazonaws.com/ngpwebsite/jugojuicerylandingVid.mp4" type="video/mp4"> </video>
             
     </video>
-    #Scripts solves chrome issues; working on safari
+    #Scripts solves chrome issues; android and iOS solution tbd 
     <script>
         var vid = document.getElementById("video-intro");
 
@@ -14,15 +14,8 @@
         vid.play();
         }
 
-        function playVid2() {
-            document.getElementById("headline").onmouseover = vid.pause();
-        }
-
-        function pauseVid() {
-        vid.pause();
-        }
+        
         setInterval(playVid,300);
-
     </script>
     <!-- Mask & flexbox options-->
     <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
@@ -34,9 +27,7 @@
           <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
             <h3 id="headline" class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Don't Settle for Average Juice, Go Jugo or Go Home!</h3>
             
-            <a href="#!" class="btn btn-rounded btn-outline-white">
-              <i class="fa fa-home"></i> Here Jugo
-            </a>
+            <%= link_to "Here Jugo", home_path, class:"btn btn-rounded btn-outline-white" %>
           </div>
           <!--Grid column-->
         </div>
