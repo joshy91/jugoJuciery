@@ -47,7 +47,7 @@
                         </li>
                         <li class="nav-item">
                             <%= link_to home_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "ABOUT", :class => "fa fa-group", :'aria-hidden' => "true" %>
+                                <%= content_tag :i, "OUR TEAM", :class => "fa fa-group", :'aria-hidden' => "true" %>
                                 <% end %>
                         </li>
                         <li class="nav-item">
@@ -55,17 +55,20 @@
                                 <%= content_tag :i, "LOCATION+HOURS", :class => "fa fa-map", :'aria-hidden' => "true" %>
                                 <% end %>
                         </li>
-                        <li class="nav-item">
-                            <%= link_to home_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "CAREERS", :class => "fa fa-street-view", :'aria-hidden' => "true" %>
-                                <% end %>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-street-view">CAREERS</i></a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <%= link_to "Career Information", root_path, class: "dropdown-item" %>
+                                <%= link_to "Career Application", root_path, class: "dropdown-item" %>
+                            </div>
                         </li>
-                         <li class="nav-item dropdown">
+                        <li class="nav-item dropdown">
                             <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-handshake-o">FRANCHISE</i></a>
                             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                                 <%= link_to "Franchise Information", root_path, class: "dropdown-item" %>
                                 <%= link_to "Franchise Application", root_path, class: "dropdown-item" %>
                             </div>
+                        </li>
                         <!-- Dropdown -->
                         <li class="nav-item dropdown">
                              <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-text-o">MENU</i></a>
