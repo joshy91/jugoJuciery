@@ -4,9 +4,11 @@
 html,
 body,
 header,
-.view {
+.view ,
+#intro {
   height: 100%;
 }
+
 
 
 @media (max-width: 740px) {
