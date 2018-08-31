@@ -40,6 +40,16 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <!-- Links -->
                     <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                             <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-text-o">MENU</i></a>
+                             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <%= link_to "Cold Pressed Juices", juices_path, class: "dropdown-item" %>
+                                <%= link_to "Smoothies", smoothies_path, class: "dropdown-item" %>
+                                <%= link_to "Bowls", bowls_path, class: "dropdown-item" %>
+                                <%= link_to "Coffee", coffee_path, class: "dropdown-item" %>
+                                <%= link_to "Catering", catering_path, class: "dropdown-item" %>
+                           </div>
+                        </li>
                         <li class="nav-item">
                                 <%= link_to home_path, class: "nav-link waves-light" do %>
                                 <%= content_tag :i, "HOME", :class => "fa fa-home", :'aria-hidden' => "true" %>
@@ -47,41 +57,26 @@
                         </li>
                         <li class="nav-item">
                             <%= link_to team_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "OUR TEAM", :class => "fa fa-group", :'aria-hidden' => "true" %>
+                                <%= content_tag :i, "OUR SQUAD", :class => "fa fa-group", :'aria-hidden' => "true" %>
                                 <% end %>
                         </li>
                         <li class="nav-item">
                             <%= link_to locationsNhours_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "LOCATION+HOURS", :class => "fa fa-map", :'aria-hidden' => "true" %>
+                                <%= content_tag :i, "LOCATIONS+HOURS", :class => "fa fa-map", :'aria-hidden' => "true" %>
                                 <% end %>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-street-view">CAREERS</i></a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <%= link_to "Career Information", careerInfo_path, class: "dropdown-item" %>
-                                <%= link_to "Career Application", root_path, class: "dropdown-item" %>
-                            </div>
+                        <li class="nav-item">
+                            <%= link_to careers_path, class: "nav-link waves-light" do %>
+                                <%= content_tag :i, "CAREERS", :class => "fa fa-street-view", :'aria-hidden' => "true" %>
+                                <% end %>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-handshake-o">FRANCHISE</i></a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <%= link_to "Franchise Information", franchiseInfo_path, class: "dropdown-item" %>
-                                <%= link_to "Franchise Application", root_path, class: "dropdown-item" %>
-                            </div>
+                        <li class="nav-item">
+                            <%= link_to franchises_path, class: "nav-link waves-light" do %>
+                                <%= content_tag :i, "FRANCHISES", :class => "fa fa-handshake-o", :'aria-hidden' => "true" %>
+                                <% end %>
                         </li>
                         <!-- Dropdown -->
-                        <li class="nav-item dropdown">
-                             <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-text-o">MENU</i></a>
-                             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <%= link_to "Cold Pressed Juices", root_path, class: "dropdown-item" %>
-                                <%= link_to "Drinks", root_path, class: "dropdown-item" %>
-                                <%= link_to "Smoothies", root_path, class: "dropdown-item" %>
-                                <%= link_to "Bowls", root_path, class: "dropdown-item" %>
-                                <%= link_to "Coffee + Superfoods", root_path, class: "dropdown-item" %>
-                                <%= link_to "Detox Packages", root_path, class: "dropdown-item" %>
-                                <%= link_to "Catering", root_path, class: "dropdown-item" %>
-                           </div>
-                        </li>
+                        
                     </ul>
                     <!-- Links -->
                     <ul class="navbar-nav nav-flex-icons ml-auto">
