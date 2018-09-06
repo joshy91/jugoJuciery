@@ -30,3 +30,11 @@ header,
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
