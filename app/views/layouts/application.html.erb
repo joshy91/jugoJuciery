@@ -40,6 +40,12 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <!-- Links -->
                     <ul class="navbar-nav">
+                        
+                        <li class="nav-item">
+                                <%= link_to home_path, class: "nav-link waves-light" do %>
+                                <%= content_tag :i, "HOME", :class => "fa fa-home", :'aria-hidden' => "true" %>
+                                <% end %>
+                        </li>
                         <li class="nav-item dropdown">
                              <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-text-o">MENU</i></a>
                              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -49,11 +55,6 @@
                                 <%= link_to "Coffee", coffee_path, class: "dropdown-item" %>
                                 <%= link_to "Catering", catering_path, class: "dropdown-item" %>
                            </div>
-                        </li>
-                        <li class="nav-item">
-                                <%= link_to home_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "HOME", :class => "fa fa-home", :'aria-hidden' => "true" %>
-                                <% end %>
                         </li>
                         <li class="nav-item">
                             <%= link_to team_path, class: "nav-link waves-light" do %>
