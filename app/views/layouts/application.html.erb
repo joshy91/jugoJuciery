@@ -29,10 +29,6 @@
        <nav class="navbar navbar-expand-lg navbar-light white">
 
     <!-- Collapse button -->
-       <%= link_to root_path, class: "navbar-brand" do %>
-       <img src="https://s3.amazonaws.com/ngpwebsite/jugoLogo2.jpg" height="30" class="animated jello infinite d-inline-block align-top" alt="">
-       <%= content_tag :i, "JUGO JUICERY" %>
-       <% end %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,14 +36,14 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <!-- Links -->
                     <ul class="navbar-nav">
-                        
+                        <%= link_to root_path, class: "navbar-brand" do %>
+       <img src="https://s3.amazonaws.com/ngpwebsite/jugoLogo.png" height="60" class="animated jello d-inline-block" alt="">
+       <% end %>
                         <li class="nav-item">
-                                <%= link_to home_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "HOME", :class => "fa fa-home", :'aria-hidden' => "true" %>
-                                <% end %>
+                                <%= link_to "HOME", home_path, class: "nav-link waves-light"%>
                         </li>
                         <li class="nav-item dropdown">
-                             <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-text-o">MENU</i></a>
+                             <a class="nav-link waves-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU</a>
                              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                                 <%= link_to "Cold Pressed Juices", juices_path, class: "dropdown-item" %>
                                 <%= link_to "Smoothies", smoothies_path, class: "dropdown-item" %>
@@ -57,24 +53,17 @@
                            </div>
                         </li>
                         <li class="nav-item">
-                            <%= link_to team_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "OUR SQUAD", :class => "fa fa-group", :'aria-hidden' => "true" %>
-                                <% end %>
+                            <%= link_to "OUR SQUAD", team_path, class: "nav-link waves-light"%>
+                        </li>
+                               
+                        <li class="nav-item">
+                            <%= link_to "LOCATIONS+HOURS", locationsNhours_path, class: "nav-link waves-light" %>
                         </li>
                         <li class="nav-item">
-                            <%= link_to locationsNhours_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "LOCATIONS+HOURS", :class => "fa fa-map", :'aria-hidden' => "true" %>
-                                <% end %>
+                            <%= link_to "CAREERS", careers_path, class: "nav-link waves-light"%>
                         </li>
                         <li class="nav-item">
-                            <%= link_to careers_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "CAREERS", :class => "fa fa-street-view", :'aria-hidden' => "true" %>
-                                <% end %>
-                        </li>
-                        <li class="nav-item">
-                            <%= link_to franchises_path, class: "nav-link waves-light" do %>
-                                <%= content_tag :i, "FRANCHISES", :class => "fa fa-handshake-o", :'aria-hidden' => "true" %>
-                                <% end %>
+                            <%= link_to "FRANCHISES", franchises_path, class: "nav-link waves-light"%>
                         </li>
                         <!-- Dropdown -->
                         
