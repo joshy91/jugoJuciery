@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :jobapps
   get 'juices' => 'menu#juices'
   get 'smoothies' => 'menu#smoothies'
   get 'bowls' => 'menu#bowls'
