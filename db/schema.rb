@@ -10,10 +10,47 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_18_002142) do
+ActiveRecord::Schema.define(version: 2018_12_20_174830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "franchiseforms", force: :cascade do |t|
+    t.string "firstname"
+    t.string "middlename"
+    t.string "lastname"
+    t.string "email"
+    t.string "phone"
+    t.string "hearabout"
+    t.string "tellabout"
+    t.string "franchisesnum"
+    t.string "franchiselocations"
+    t.string "franchisetimeline"
+    t.string "locationopenness"
+    t.string "initialinvestment"
+    t.string "fundsaccess"
+    t.string "veteran"
+    t.string "felon"
+    t.string "lawsuits"
+    t.string "bankruptcy"
+    t.string "savings"
+    t.string "homevalue"
+    t.string "investmentsvalue"
+    t.string "otherassetsvalue"
+    t.string "totalassets"
+    t.string "salary"
+    t.string "otherincome"
+    t.string "autobalance"
+    t.string "mortgagebalance"
+    t.string "otherdebtbalance"
+    t.string "totalliabilities"
+    t.string "networth"
+    t.string "franchisefinancing"
+    t.string "electronicsignature"
+    t.string "agreement"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "job_targets", force: :cascade do |t|
     t.string "jobtitle"
