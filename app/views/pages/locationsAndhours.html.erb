@@ -1,6 +1,8 @@
 <main class="mt-5">
-<h2 class="mb-5 font-weight-bold text-center">Our Locations</h2>
+<h2 class="mb-5 font-weight-bold text-center">Locations</h2>
  <script src="https://maps.google.com/maps/api/js"></script>
+
+
 <!--Accordion wrapper-->
 
 
@@ -19,8 +21,8 @@
     <div class="col-md-4">
         <div class="card-wrapper">
     <!-- Card Dark -->
-<div class="animated wobble card-2 card-rotating effect__click h-100 w-100">
-<div class="face front card">
+<div id="card-2" class="card card-rotating animated wobble">
+<div class="face front">
   <!-- Card image -->
   <div class="view overlay">
     <img class="card-img-top" src="https://s3.amazonaws.com/ngpwebsite/Wurzbach.jpg" alt="Card image cap">
@@ -45,10 +47,43 @@ Sat-Sun:
     9:00 am - 7:00 pm <br>
     Phone: 210-667-4474 </p>
     <!-- Link -->
-    <a href="#!" class="rotate-btn white-text d-flex justify-content-end"><h5>Google Map <i class="fa fa-angle-double-right"></i></h5></a>
+    <a class="rotate-btn" data-card="card-2"> Google Map <i class="fa fa-angle-double-right"></i></a>
 
   </div>
 </div>
+<!--Back Side-->
+    <div class="face back card">
+
+      <!-- Content -->
+      <div class="content text-center">
+
+        <h4 class="card-title font-weight-bold my-4">Social shares <i class="fa fa-close rotate-btn text-muted"
+            data-card="card-2"></i></h4>
+        <hr>
+        <!-- Social Icons -->
+        <ul class="list-unstyled list-inline d-flex justify-content-center flex-wrap">
+          <li class="list-inline-item"><a class="btn-floating btn-dribbble"><i class="fa fa-dribbble"> </i></a></li>
+          <li class="list-inline-item"><a class="btn-floating btn-slack"><i class="fa fa-slack"> </i></a></li>
+          <li class="list-inline-item"><a class="btn-floating btn-ins"><i class="fa fa-instagram"> </i></a></li>
+          <li class="list-inline-item"><a class="btn-floating btn-pin"><i class="fa fa-pinterest"> </i></a></li>
+          <li class="list-inline-item"><a class="btn-floating btn-tw"><i class="fa fa-twitter"> </i></a></li>
+          <li class="list-inline-item"><a class="btn-floating btn-gplus"><i class="fa fa-google-plus"> </i></a></li>
+          <li class="list-inline-item"><a class="btn-floating btn-git"><i class="fa fa-github"> </i></a></li>
+        </ul>
+        <h5 class="font-weight-bold my-4">Join our community</h5>
+        <hr>
+        <!-- Social Icons -->
+        <ul class="list-unstyled list-inline d-flex justify-content-center flex-wrap mt-4">
+          <li class="list-inline-item"><a class="btn btn-fb px-4"><i class="fa fa-facebook"> </i></a></li>
+          <li class="list-inline-item"><a class="btn btn-tw px-4"><i class="fa fa-twitter"> </i></a></li>
+          <li class="list-inline-item"><a class="btn btn-li px-4"><i class="fa fa-linkedin"> </i></a></li>
+          <li class="list-inline-item"><a class="btn btn-ins px-4"><i class="fa fa-instagram"> </i></a></li>
+        </ul>
+
+      </div>
+
+    </div>
+    <!--Back Side-->
 </div>
 </div>
 <!-- Card Dark -->

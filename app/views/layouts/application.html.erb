@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Jugo Juciery</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,16 +13,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <!-- Bootstrap tooltips -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script src="js/mdb.min.js"></script>
     <!--Google Maps-->
     <script src="https://maps.google.com/maps/api/js"></script>
   </head>
 
-  <body class="<%= controller_name %> <%= action_name %>">
+  <body>
     <!--Main Navigation-->
         <!--Navbar-->
        <nav class="navbar navbar-expand-lg navbar-light white">
@@ -90,8 +84,6 @@
     
     
     <!--Footer-->
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
     
     <!-- Google Maps settings -->
     
@@ -101,5 +93,7 @@
         interval: 5000,
     })
     </script>
+
+  <%= javascript_include_tag 'application', media: 'all' %>
   </body>
 </html>

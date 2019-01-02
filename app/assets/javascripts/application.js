@@ -10,11 +10,20 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+
+
+//= require jquery3
+//= require jquery_ujs
+//= require tether
 //= require popper.min
-//= require bootstrap
+//= require bootstrap.min
 //= require mdb
-//= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require_tree .
+
+// SideNav Button Initialization
+$(".button-collapse").sideNav();
+// SideNav Scrollbar Initialization
+var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+Ps.initialize(sideNavScrollbar);
+

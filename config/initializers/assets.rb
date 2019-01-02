@@ -9,6 +9,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( styleNGPLanding.css )
 Rails.application.config.assets.precompile += %w( stylePagesHome.css )
+Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf|woff2)\z/
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
