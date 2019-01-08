@@ -11641,7 +11641,7 @@ span[data-jarallax-element] {
   .side-nav.side-nav-light {
     background-color: #e5e5e5; }
     .side-nav.side-nav-light .logo-wrapper {
-      border-bottom: 1px solid rgba(153, 153, 153, 0.3); }
+      border-bottom: 1px solid rgba(252, 252, 252, 0.3); }
       .side-nav.side-nav-light .logo-wrapper.sn-ad-avatar-wrapper {
         color: #555; }
     .side-nav.side-nav-light .about {
@@ -11753,7 +11753,7 @@ span[data-jarallax-element] {
       margin-bottom: -99999px;
       padding-bottom: 99999px; }
   .side-nav .logo-wrapper {
-    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+    border-bottom: 1px solid rgba(252, 252, 252, 0.3);
     height: 8.75rem; }
     .side-nav .logo-wrapper a {
       height: 8.75rem;
