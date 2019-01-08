@@ -11,7 +11,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <!-- Bootstrap tooltips -->
     <!--Google Maps-->
     <script src="https://maps.google.com/maps/api/js"></script>
@@ -111,13 +110,13 @@
     <!-- Google Maps settings -->
     
     <!-- Carousel options -->
+    <%= javascript_include_tag 'application', media: 'all' %>
     <script>
     $('.carousel').carousel({
         interval: 5000,
     })
     </script>
 
-  <%= javascript_include_tag 'application', media: 'all' %>
   <script type="text/javascript">
   // SideNav Button Initialization
 $(".button-collapse").sideNav();

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'franchiseforms/new'
+  resources :franchiseforms
+  resources :jobapps
   get 'juices' => 'menu#juices'
   get 'smoothies' => 'menu#smoothies'
   get 'bowls' => 'menu#bowls'

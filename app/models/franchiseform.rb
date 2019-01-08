@@ -1,0 +1,2 @@
+class Franchiseform < ApplicationRecord
+end

@@ -12,8 +12,8 @@
 //
 
 
-//= require jquery3
-//= require jquery_ujs
+//= require jquery-3.3.1.min
+//= require rails-ujs
 //= require tether
 //= require popper.min
 //= require bootstrap.min
