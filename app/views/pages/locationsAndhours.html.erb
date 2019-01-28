@@ -1,6 +1,3 @@
- <script src="https://maps.google.com/maps/api/js"></script>
-
-
 <!--Accordion wrapper-->
 
 
@@ -17,93 +14,81 @@
             <div class="card-body">
                 <div class="row">
     <div class="col-md-4">
-        <div class="card-wrapper">
-    <!-- Card Dark -->
-<div id="card-2" class="card card-rotating animated wobble">
-<div class="face front">
-  <!-- Card image -->
-  <div class="view overlay">
-    <img class="card-img-top" src="https://s3.amazonaws.com/ngpwebsite/Wurzbach.jpg" alt="Card image cap">
-    <a>
-      <div class="mask rgba-white-slight"></div>
-    </a>
-  </div>
+<!-- Rotating card -->
+<div class="card-wrapper">
+  <div id="card-1" class="card card-rotating text-center">
 
-  <!-- Card content -->
-  <div class="card-body elegant-color white-text rounded-bottom">
+    <!-- Front Side -->
+    <div class="face front">
 
-    <!-- Social shares button -->
-    <a class="activator waves-effect mr-4"><i class="fa fa-share-alt white-text"></i></a>
-    <!-- Title -->
-    <h4 class="card-title">Wurzbach Area</h4>
-    <hr class="hr-light">
-    <!-- Text -->
-    <p class="card-text white-text mb-4">11858 Wurzbach, San Antonio, TX 78230<br>
-        M-F:
-    7:00 am - 7:30 pm <br>
-Sat-Sun:
-    9:00 am - 7:00 pm <br>
-    Phone: 210-667-4474 </p>
-    <!-- Link -->
-    <a class="rotate-btn" data-card="card-2"> Google Map <i class="fa fa-angle-double-right"></i></a>
-
-  </div>
-</div>
-<!--Back Side-->
-    <div class="face back card">
-
-      <!-- Content -->
-      <div class="content text-center">
-
-        <h4 class="card-title font-weight-bold my-4">Social shares <i class="fa fa-close rotate-btn text-muted"
-            data-card="card-2"></i></h4>
-        <hr>
-        <!-- Social Icons -->
-        <ul class="list-unstyled list-inline d-flex justify-content-center flex-wrap">
-          <li class="list-inline-item"><a class="btn-floating btn-dribbble"><i class="fa fa-dribbble"> </i></a></li>
-          <li class="list-inline-item"><a class="btn-floating btn-slack"><i class="fa fa-slack"> </i></a></li>
-          <li class="list-inline-item"><a class="btn-floating btn-ins"><i class="fa fa-instagram"> </i></a></li>
-          <li class="list-inline-item"><a class="btn-floating btn-pin"><i class="fa fa-pinterest"> </i></a></li>
-          <li class="list-inline-item"><a class="btn-floating btn-tw"><i class="fa fa-twitter"> </i></a></li>
-          <li class="list-inline-item"><a class="btn-floating btn-gplus"><i class="fa fa-google-plus"> </i></a></li>
-          <li class="list-inline-item"><a class="btn-floating btn-git"><i class="fa fa-github"> </i></a></li>
-        </ul>
-        <h5 class="font-weight-bold my-4">Join our community</h5>
-        <hr>
-        <!-- Social Icons -->
-        <ul class="list-unstyled list-inline d-flex justify-content-center flex-wrap mt-4">
-          <li class="list-inline-item"><a class="btn btn-fb px-4"><i class="fa fa-facebook"> </i></a></li>
-          <li class="list-inline-item"><a class="btn btn-tw px-4"><i class="fa fa-twitter"> </i></a></li>
-          <li class="list-inline-item"><a class="btn btn-li px-4"><i class="fa fa-linkedin"> </i></a></li>
-          <li class="list-inline-item"><a class="btn btn-ins px-4"><i class="fa fa-instagram"> </i></a></li>
-        </ul>
-
-      </div>
-
-    </div>
-    <!--Back Side-->
-</div>
-</div>
-<!-- Card Dark -->
-</div>
-
-<div class="col-md-4">
-    <!-- Card Dark -->
-<div class="animated wobble card">
-
-  <!-- Card image -->
-  <div class="view overlay">
+      <!-- Image-->
+        <div class="view overlay">
     <img class="card-img-top" src="https://s3.amazonaws.com/ngpwebsite/Main.jpg" alt="Card image cap">
     <a>
       <div class="mask rgba-white-slight"></div>
     </a>
   </div>
 
-  <!-- Card content -->
-  <div class="card-body elegant-color white-text rounded-bottom">
+      <!-- Content -->
+      <div class="card-body elegant-color white-text rounded-bottom">
 
     <!-- Social shares button -->
-    <a class="activator waves-effect mr-4"><i class="fa fa-share-alt white-text"></i></a>
+    <a class="activator waves-effect mr-4"></a>
+    <!-- Title -->
+    <h4 class="card-title">Wurzbach Area</h4>
+    <hr class="hr-light">
+    <!-- Text -->
+    <p class="card-text white-text mb-4">1621 N Main, San Antonio, TX 78212<br>
+        M-F:
+    7:00 am - 7:30 pm <br>
+Sat-Sun:
+    9:00 am - 7:00 pm <br>
+    Phone: 210-667-4474 </p>
+    <!-- Link -->
+    <a class="rotate-btn white-text" data-card="card-1"><h5>Google Map <i class="fa fa-angle-double-right"></i></h5></a>
+
+  </div>
+    </div>
+    <!-- Front Side -->
+
+    <!-- Back Side -->
+    <div class="face back">
+      <div class="card-body">
+
+        <!-- Content -->
+        <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px"></div>
+          <a class="rotate-btn" data-card="card-1"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+      </div>
+    </div>
+    <!-- Back Side -->
+
+  </div>
+</div>
+<!-- Rotating card -->
+</div>
+
+<div class="col-md-4">
+<!-- Rotating card -->
+<div class="card-wrapper">
+  <div id="card-2" class="card card-rotating text-center">
+
+    <!-- Front Side -->
+    <div class="face front">
+
+      <!-- Image-->
+        <div class="view overlay">
+    <img class="card-img-top" src="https://s3.amazonaws.com/ngpwebsite/Main.jpg" alt="Card image cap">
+    <a>
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+      <!-- Content -->
+      <div class="card-body elegant-color white-text rounded-bottom">
+
+    <!-- Social shares button -->
+    <a class="activator waves-effect mr-4"></a>
     <!-- Title -->
     <h4 class="card-title">Downtown SAC Area</h4>
     <hr class="hr-light">
@@ -115,17 +100,31 @@ Sat-Sun:
     9:00 am - 7:00 pm <br>
     Phone: 210-667-4474 </p>
     <!-- Link -->
-    <a href="#!" class="white-text d-flex justify-content-end"><h5>Google Map <i class="fa fa-angle-double-right"></i></h5></a>
+    <a class="rotate-btn white-text" data-card="card-2"><h5>Google Map <i class="fa fa-angle-double-right"></i></h5></a>
 
   </div>
+    </div>
+    <!-- Front Side -->
 
+    <!-- Back Side -->
+    <div class="face back">
+      <div class="card-body">
+
+        <!-- Content -->
+        <div id="map-container2" class="z-depth-1-half map-container mb-5" style="height: 400px"></div>
+          <a class="rotate-btn" data-card="card-2"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+      </div>
+    </div>
+    <!-- Back Side -->
+
+  </div>
 </div>
-<!-- Card Dark -->
+<!-- Rotating card -->
 </div>
 <div class="col-md-4">
     <!-- Card Dark -->
 <div class="animated wobble card">
-
   <!-- Card image -->
   <div class="view overlay">
     <img class="card-img-top" src="https://s3.amazonaws.com/ngpwebsite/Leon+Valley.jpg" alt="Card image cap">
@@ -190,7 +189,6 @@ Sat-Sun:
     Phone: 210-667-4474 </p>
     <!-- Link -->
     <a href="#!" class="white-text d-flex justify-content-end"><h5>Google Map <i class="fa fa-angle-double-right"></i></h5></a>
-
   </div>
 
 </div>
@@ -226,7 +224,6 @@ Sat-Sun:
     Phone: 210-667-4474 </p>
     <!-- Link -->
     <a href="#!" class="white-text d-flex justify-content-end"><h5>Google Map <i class="fa fa-angle-double-right"></i></h5></a>
-
   </div>
 
 </div>
@@ -264,7 +261,6 @@ Sat-Sun:
 </div>
 <!-- Card Dark -->
 </div>
-
 </div>
             
             </div>
@@ -293,7 +289,6 @@ Sat-Sun:
       <div class="mask rgba-white-slight"></div>
     </a>
   </div>
-
   <!-- Card content -->
   <div class="card-body elegant-color white-text rounded-bottom">
 
@@ -341,7 +336,6 @@ Sat-Sun:
     <a href="#!" class="white-text d-flex justify-content-end"><h5>Google Map <i class="fa fa-angle-double-right"></i></h5></a>
 
   </div>
-
 </div>
 <!-- Card Dark -->
 </div>
@@ -382,6 +376,8 @@ Sat-Sun:
             </div>
         </div>
     </div>
+</p>
+
     <!--<div class="card">
         <div class="card-header grey lighten-3 z-depth-1" role="tab" id="heading98">
             <h5 class="text-uppercase mb-0 py-1">
@@ -466,9 +462,4 @@ Sat-Sun:
                
             </section>
             -->
-            </div>
-        </div>
-    </div>
-</div>
 <!--Accordion wrapper-->
-</main>
